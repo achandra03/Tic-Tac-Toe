@@ -1,8 +1,9 @@
-#include "Game.h"
+#include <SFML/Graphics.hpp>
+#include "Game.hpp"
 int main()
 {
-    
-    /*sf::Texture text;
+    /*
+    sf::Texture text;
     text.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/board.png");
     sf::Sprite sprite;
     sprite.setTexture(text);
@@ -21,8 +22,9 @@ int main()
     }
     */
     
-    Game g;
-    g.start();
+      Game g;
+      g.start();
     
     return 0;
 }
+

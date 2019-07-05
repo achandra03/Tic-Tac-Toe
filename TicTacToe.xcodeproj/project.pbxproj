@@ -14,7 +14,7 @@
 		AB7FF7DF22986B23009AC6EE /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7FF7DE22986B23009AC6EE /* libsfml-system.2.5.1.dylib */; };
 		AB7FF7E122986B2E009AC6EE /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7FF7E022986B2E009AC6EE /* libsfml-window.2.5.1.dylib */; };
 		AB7FF7E4229A18F8009AC6EE /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB7FF7E2229A18F8009AC6EE /* Board.cpp */; };
-		AB7FF7E6229A242C009AC6EE /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB7FF7E5229A242C009AC6EE /* Game.cpp */; };
+		ABE5BFFE22CDB5B7001565E5 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ABE5BFFC22CDB5B7001565E5 /* Game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,9 +38,9 @@
 		AB7FF7DE22986B23009AC6EE /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "ExternalLibraries/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
 		AB7FF7E022986B2E009AC6EE /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "ExternalLibraries/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
 		AB7FF7E2229A18F8009AC6EE /* Board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
-		AB7FF7E5229A242C009AC6EE /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
 		AB7FF7E7229A24CF009AC6EE /* Board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
-		ABC83F4822C84E1B0044A7A6 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		ABE5BFFC22CDB5B7001565E5 /* Game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		ABE5BFFD22CDB5B7001565E5 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +79,9 @@
 		AB7FF7CF229869E0009AC6EE /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				ABE5BFFC22CDB5B7001565E5 /* Game.cpp */,
+				ABE5BFFD22CDB5B7001565E5 /* Game.hpp */,
 				AB7FF7D0229869E0009AC6EE /* main.cpp */,
-				AB7FF7E5229A242C009AC6EE /* Game.cpp */,
-				ABC83F4822C84E1B0044A7A6 /* Game.h */,
 				AB7FF7E2229A18F8009AC6EE /* Board.cpp */,
 				AB7FF7E7229A24CF009AC6EE /* Board.h */,
 			);
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB7FF7E6229A242C009AC6EE /* Game.cpp in Sources */,
+				ABE5BFFE22CDB5B7001565E5 /* Game.cpp in Sources */,
 				AB7FF7E4229A18F8009AC6EE /* Board.cpp in Sources */,
 				AB7FF7D1229869E0009AC6EE /* main.cpp in Sources */,
 			);

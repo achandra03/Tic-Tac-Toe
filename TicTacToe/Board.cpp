@@ -8,7 +8,19 @@
 #define x 'x'
 #define o 'o'
 
-    
+Board::Board()
+{
+    sf::Texture boardTexture;
+    boardTexture.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/board.png");
+    boardSprite.setTexture(boardTexture);
+    sf::Texture xTexture;
+    xTexture.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/X.png");
+    xSprite.setTexture(xTexture);
+    sf::Texture oTexture;
+    oTexture.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/o.png");
+    oSprite.setTexture(oTexture);
+}
+
 int Board::checkWin()
     {
         //Check for diagonal wins
