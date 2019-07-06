@@ -12,14 +12,19 @@
 #include <stdio.h>
 #include "Board.h"
 #include <SFML/Graphics.hpp>
+#include <SFML/Window/Mouse.hpp>
 class Game
 {
 private:
-    sf::RenderWindow window;
+    sf::Sprite oSprite;
+    sf::Sprite xSprite;
+    sf::Sprite boardSprite;
 public:
     void render();
     void start();
-    Game() : window{sf::VideoMode(1000, 1000), "Tic Tac Toe"} {}
+    int handleX(int x);
+    int handleY(int y);
+    Game();
     Board b();
 };
 #endif /* Game_hpp */
