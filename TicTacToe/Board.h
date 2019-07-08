@@ -16,9 +16,6 @@ class Board
         const int X_WIN = 1;
     
     public:
-        sf::Sprite boardSprite;
-        sf::Sprite xSprite;
-        sf::Sprite oSprite;
         int checkWin();
         char board[3][3];
        // void setPiece(char player, int x, int y);

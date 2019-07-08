@@ -1,5 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "Game.hpp"
+#include "screens.hpp"
+#include <iostream>
 int main()
 {
     /*
@@ -21,6 +23,7 @@ int main()
         window.display();
     }
     */
+      std::vector<cScreen*> Screens;
     
       Game g;
       g.start();

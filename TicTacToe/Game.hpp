@@ -16,15 +16,18 @@
 class Game
 {
 private:
-    sf::Sprite oSprite;
-    sf::Sprite xSprite;
+    //sf::Sprite oSprite;
+    //sf::Sprite xSprite;
     sf::Sprite boardSprite;
+    sf::Texture xTexture;
+    sf::Texture oTexture;
+    //sf::Texture boardTexture;
 public:
     void render();
     void start();
     int handleX(int x);
     int handleY(int y);
     Game();
-    Board b();
+    Board b;
 };
 #endif /* Game_hpp */
