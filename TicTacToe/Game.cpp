@@ -9,7 +9,6 @@
 #include "Game.hpp"
 #include <iostream>
 
-sf::RenderWindow window(sf::VideoMode(1000, 1000), "Tic Tac Toe");
 bool X_turn = true;
 
 Game::Game()
@@ -17,7 +16,7 @@ Game::Game()
 
 }
 
-void Game::render()
+void Game::render(sf::RenderWindow &window)
 {
     if(window.isOpen())
     {
@@ -45,7 +44,7 @@ void Game::render()
     }
 }
 
-void Game::start()
+void Game::start(sf::RenderWindow &window)
 {
     sf::Texture boardTexture;
     boardTexture.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/board.png");
@@ -86,7 +85,7 @@ void Game::start()
                 }
             }
             window.clear(sf::Color(255, 255, 255));
-            render();
+            render(window);
             window.display();
         }
     }

@@ -2,8 +2,11 @@
 #include "Game.hpp"
 #include "screens.hpp"
 #include <iostream>
+#include "GameScreen.h"
+#include "ChooseScreen.hpp"
 int main()
 {
+    sf::RenderWindow window(sf::VideoMode(1000, 1000), "Tic Tac Toe");
     /*
     sf::Texture text;
     text.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/board.png");
@@ -24,9 +27,10 @@ int main()
     }
     */
       std::vector<cScreen*> Screens;
-    
-      Game g;
-      g.start();
+      ChooseScreen cs;
+      cs.Run(window);
+      //GameScreen gs;
+      //gs.Run(window);
     
     return 0;
 }

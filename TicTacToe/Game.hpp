@@ -23,8 +23,8 @@ private:
     sf::Texture oTexture;
     //sf::Texture boardTexture;
 public:
-    void render();
-    void start();
+    void render(sf::RenderWindow &window);
+    void start(sf::RenderWindow &window);
     int handleX(int x);
     int handleY(int y);
     Game();
