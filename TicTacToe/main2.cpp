@@ -1,10 +1,3 @@
-//
-//  main2.cpp
-//  TicTacToe
-//
-//  Created by Arnav Chandra on 7/11/19.
-//  Copyright © 2019 Arnav Chandra. All rights reserved.
-//
 
 #include <iostream>
 #include "Game.hpp"

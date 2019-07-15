@@ -1,10 +1,4 @@
-//
-//  ClientGame.cpp
-//  TicTacToe
-//
-//  Created by Arnav Chandra on 7/10/19.
-//  Copyright © 2019 Arnav Chandra. All rights reserved.
-//
+
 
 #include "ClientGame.hpp"
 #include <iostream>

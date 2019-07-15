@@ -1,10 +1,4 @@
-//
-//  ServerGame.hpp
-//  TicTacToe
-//
-//  Created by Arnav Chandra on 7/10/19.
-//  Copyright © 2019 Arnav Chandra. All rights reserved.
-//
+
 
 #ifndef ServerGame_hpp
 #define ServerGame_hpp

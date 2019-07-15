@@ -1,10 +1,4 @@
-//
-//  Game.hpp
-//  TicTacToe
-//
-//  Created by Arnav Chandra on 7/4/19.
-//  Copyright © 2019 Arnav Chandra. All rights reserved.
-//
+
 
 #ifndef Game_hpp
 #define Game_hpp

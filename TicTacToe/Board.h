@@ -1,9 +1,4 @@
-//
-//  Board.h
-//  TicTacToe
-//
-//  Copyright © 2019 Arnav Chandra. All rights reserved.
-//
+
 
 #ifndef Board_h
 #define Board_h

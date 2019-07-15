@@ -1,9 +1,4 @@
-//
-//  Board.cpp
-//  TicTacToe
-//
-//  Coporight © 2019 Arnav Chandra. All rights reserved.
-//
+
 #include "Board.h"
 #define x 'x'
 #define o 'o'

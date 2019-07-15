@@ -1,10 +1,3 @@
-//
-//  Game.cpp
-//  TicTacToe
-//
-//  Created by Arnav Chandra on 7/4/19.
-//  Copyright © 2019 Arnav Chandra. All rights reserved.
-//
 
 #include "Game.hpp"
 #include <iostream>
@@ -44,53 +37,6 @@ void Game::render(sf::RenderWindow &window)
     }
 }
 
-/*void Game::start(sf::RenderWindow &window)
-{
-    sf::Texture boardTexture;
-    boardTexture.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/board.png");
-    boardSprite.setTexture(boardTexture);
-    //sf::Texture xTexture;
-    xTexture.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/X.png");
-    //xSprite.setTexture(xTexture);
-    //sf::Texture oTexture;
-    oTexture.loadFromFile("/Users/arnavchandra/Desktop/tictactoe/TicTacToe/assets/o.png");
-    //oSprite.setTexture(oTexture);
-    while(true)
-    {
-        while(window.isOpen())
-        {
-            sf::Event event;
-            if(window.pollEvent(event))
-            {
-                if (event.type == sf::Event::Closed)
-                {
-                    window.close();
-                    return;
-                }
-                if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
-                {
-                    sf::Vector2i pos = sf::Mouse::getPosition();
-                    int boardX = handleX(pos.x);
-                    int boardY = handleY(pos.y);
-                    if(X_turn && b.board[boardX][boardY] != 'x' && b.board[boardX][boardY] != 'o')
-                    {
-                        b.board[boardX][boardY] = 'x';
-                        X_turn = false;
-                    }
-                    else if(!X_turn && b.board[boardX][boardY] != 'x' && b.board[boardX][boardY] != 'o')
-                    {
-                        b.board[boardX][boardY] = 'o';
-                        X_turn = true;
-                    }
-                }
-            }
-            window.clear(sf::Color(255, 255, 255));
-            render(window);
-            window.display();
-        }
-    }
-}
- */
 
 void Game::serverStart(sf::RenderWindow &window)
 {
