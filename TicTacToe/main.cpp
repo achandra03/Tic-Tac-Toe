@@ -4,6 +4,8 @@
 #include <iostream>
 #include "GameScreen.h"
 #include "ChooseScreen.hpp"
+#include "ServerGame.hpp"
+#include "ClientGame.hpp"
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(1000, 1000), "Tic Tac Toe");
@@ -26,12 +28,35 @@ int main()
         window.display();
     }
     */
-      std::vector<cScreen*> Screens;
-      ChooseScreen cs;
-      cs.Run(window);
+    //  std::vector<cScreen*> Screens;
+      //ChooseScreen cs;
+      //cs.Run(window);
       //GameScreen gs;
       //gs.Run(window);
     
+   /* ServerGame sg;
+    char arr[3][3] =
+    {
+        {'a', 'b', 'c'},
+        {'d', 'e', 'f'},
+        {'g', 'h', 'i'}
+    };
+    sg.sendData(arr);
+    std::cout << "sent\n";
     return 0;
+    */
+    Game g;
+    g.serverStart(window);
+    /*ServerGame sg;
+    sg.connect();
+    char arr[3][3] =
+    {
+        {'a', 'b', 'c'},
+        {'d', 'e', 'f'},
+        {'g', 'h', 'i'}
+    };
+    sg.sendData(arr);
+     */
+    
 }
 

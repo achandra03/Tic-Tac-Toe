@@ -13,6 +13,9 @@
 #include "Board.h"
 #include <SFML/Graphics.hpp>
 #include <SFML/Window/Mouse.hpp>
+#include "ServerGame.hpp"
+#include "ClientGame.hpp"
+#include "char2D.h"
 class Game
 {
 private:
@@ -24,10 +27,13 @@ private:
     //sf::Texture boardTexture;
 public:
     void render(sf::RenderWindow &window);
-    void start(sf::RenderWindow &window);
+    //void start(sf::RenderWindow &window);
+    void serverStart(sf::RenderWindow &window);
+    void clientStart(sf::RenderWindow &window);
+    void setBoard(char2D board);
     int handleX(int x);
     int handleY(int y);
     Game();
-    Board b;
+    char2D b;
 };
 #endif /* Game_hpp */
