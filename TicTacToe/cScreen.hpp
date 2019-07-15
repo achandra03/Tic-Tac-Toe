@@ -1,10 +1,3 @@
-//
-//  cScreen.hpp
-//  TicTacToe
-//
-//  Created by Arnav Chandra on 7/8/19.
-//  Copyright © 2019 Arnav Chandra. All rights reserved.
-//
 
 #ifndef cScreen_hpp
 #define cScreen_hpp
