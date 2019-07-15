@@ -1,5 +1,4 @@
 
-
 #ifndef Board_h
 #define Board_h
 #include <SFML/Graphics.hpp>
